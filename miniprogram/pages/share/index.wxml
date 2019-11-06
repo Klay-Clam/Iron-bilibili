@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view>
+  <canvas canvas-id="post-temp" class="post" style="width: 710rpx;height:1100rpx; "></canvas>
+</view>

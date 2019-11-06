@@ -1,0 +1,13 @@
+<!-- index.wxml -->
+<view class="desc yellow-text">
+  70周年阅兵已过去一段时间，关于阅兵中《钢铁洪流进行曲》的热度只增不减，在B站上的爱国青年通过各种渠道、使用各种乐器进行了演绎，表达对祖国的热爱。
+  在这里我通过这小程序汇总了一下在b站上各种乐器的演奏。<text class="red-text">阿中哥哥冲鸭</text>
+</view>
+<view class="section" wx:for="{{imgList}}" wx:key="{{index}}">
+  <view class="main-title white-text">{{item.key}}</view>
+  <!-- <image class="preview" mode="widthFix" src="cloud://ironsong-ybo9w.6972-ironsong-ybo9w/qc-list-img/test.jpg" bind:tap="preview" /> -->
+  <scroll-view scroll-y="true" class="img-container">
+    <image class="preview" mode="widthFix" src="{{item.path}}" data-path="{{item.path}}" bind:tap="preview" />
+  </scroll-view>
+</view>
+<navigator hover-class="none" class="yellow-text" style="text-align: center" url="/pages/share/index">分享到朋友圈</navigator>

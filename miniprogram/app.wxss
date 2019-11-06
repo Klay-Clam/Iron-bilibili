@@ -1,0 +1,15 @@
+/**app.wxss**/
+
+
+/* red #de2910 */
+
+
+/* yellow #ffde00 */
+
+.red {
+    background-color: #de2910;
+}
+
+.yellow {
+    background-color: #ffde00;
+}
